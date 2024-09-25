@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'ActayWide';
+    src: url('../fonts/ActayWide.eot');
+    src: local('../fonts/ActayWide'), local('../fonts/ActayWide'),
+    url('../fonts/ActayWide.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ActayWide.woff2') format('woff2'),
+    url('../fonts/ActayWide.woff') format('woff'),
+    url('../fonts/ActayWide.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.white {
+    color: #f5f5f5;
+}
+
+.black {
+    color: #2C2C2C;
+}
+.blue {
+    background-color: #3C8490;
+}
+.fs14 {
+    font-size: 14px
+}
+
+.fs15 {
+    font-size: 15px
+}
+
+.fs16 {
+    font-size: 16px
+}
+
+.fs17 {
+    font-size: 17px
+}
+
+.fs18 {
+    font-size: 18px
+}
+
+.fs19 {
+    font-size: 19px
+}
+
+.fs20 {
+    font-size: 20px
+}
+
+.fs21 {
+    font-size: 21px
+}
+
+.fs22 {
+    font-size: 22px
+}
+
+.fs23 {
+    font-size: 23px
+}
+
+.fs24 {
+    font-size: 24px
+}
+
+.fs25 {
+    font-size: 25px
+}
+
+.fs26 {
+    font-size: 26px
+}
+
+.fs27 {
+    font-size: 27px
+}
+
+.fs28 {
+    font-size: 28px
+}
+
+.fs29 {
+    font-size: 29px
+}
+
+.fs30 {
+    font-size: 30px
+}
+
+.fs31 {
+    font-size: 31px
+}
+
+.fs32 {
+    font-size: 32px
+}
+
+.fs33 {
+    font-size: 33px
+}
+
+.fs34 {
+    font-size: 34px
+}
