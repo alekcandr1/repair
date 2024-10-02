@@ -10,6 +10,7 @@ body {
 
 .df {
     display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -108,6 +109,13 @@ header {
     width: max-content;
 }
 
+.btn:hover {
+    background-color: #e7e7e7;
+    color: #2C2C2C;
+    box-sizing: border-box;
+    transition: all ease 300ms;
+}
+
 .btn-black {
     background-color: #2C2C2C;
     color: #F9F9F9;
@@ -123,6 +131,11 @@ header {
     color: #3C8490;
 }
 
+.btn-white-black {
+    background-color: #f5f5f5;
+    color: #2C2C2C;
+}
+
 .btn-tr {
     font-weight: 200;
     color: #f5f5f5;
@@ -130,6 +143,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid #909090;
+
 }
 
 .how-pt {
@@ -432,10 +446,24 @@ h3 {
     border-radius: 25px;
     outline: none;
     background-color: #333;
-    color: #7B7B7B;
+    color: #f5f5f5;
     width: 200px;
     margin-right: 10px;
     font-size: 18px;
+}
+
+input::placeholder {
+    color: #7B7B7B; /* Красный цвет */
+    opacity: 1; /* Полная непрозрачность */
+}
+
+/* Для поддержки старых версий браузеров */
+input:-ms-input-placeholder {
+    color: #7B7B7B; /* Красный цвет */
+}
+
+input::-ms-input-placeholder {
+    color: #7B7B7B; /* Красный цвет */
 }
 
 .callback-form button {
@@ -451,6 +479,7 @@ h3 {
     align-items: center;
     font-weight: 300;
     font-family: 'Inter', Arial, sans-serif;
+    transition: all ease 300ms;
 }
 
 .callback-form button:hover {
@@ -533,16 +562,46 @@ h3 {
 .video {
     z-index: 2;
     width: 1080px;
-    background-image: url('../img/video.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 14px;
     height: 540px;
-    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+    z-index: -1;
 }
 
 .video p {
@@ -554,6 +613,7 @@ h3 {
 .slogan {
     font-size: 38px;
     font-weight: 500;
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 
@@ -628,6 +688,10 @@ h3 {
     align-items: center
 }
 
+.about-right-item-last {
+    border-bottom: 0 solid #456467;
+}
+
 .about-item-number {
     min-width: 210px;
     display: flex;
@@ -654,4 +718,222 @@ h3 {
 .about-num-desc {
     font-size: 18px;
     font-weight: 300;
+}
+
+#price {
+    padding: 150px 0;
+}
+
+.price-wrap {
+    display: flex;
+    gap: 20px;
+}
+
+.price-left {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 50%;
+}
+
+.price-left-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-left-texts p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#price .price-link {
+    font-size: 38px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #616161;
+}
+
+#price .active {
+    font-size: 38px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #2C2C2C;
+}
+
+.price-item {
+    font-size: 22px;
+    font-weight: 300;
+    color: #2C2C2C;
+    display: flex;
+    gap: 40px;
+    padding: 22px 20px;
+    border-top: 1px solid #505050;
+    align-items: center;
+}
+
+.price-item-first {
+    border-top: 0 solid #505050;
+}
+
+.price-value {
+    width: 80px;
+    font-size: 17px;
+    font-weight: 200;
+    color: #616161;
+}
+
+.price-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 50%;
+}
+
+.view-all {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    padding-top: 20px;
+    color: #2C2C2C;
+
+}
+
+.map-section {
+    position: relative;
+    height: 650px;
+    border-top: 8px solid #3C8490;
+}
+
+.form-block {
+    width: max-content;
+    position: absolute;
+    top: 80px;
+    /*left: 50%;*/
+    /*transform: translate(30px, -50%);*/
+    background-color: #2C2C2C;
+    color: #f5f5f5;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.black-white-map {
+    filter: grayscale(100%);
+}
+
+.map-head {
+    font-size: 38px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.map-pre-head {
+    font-size: 20px;
+}
+
+.map-phone {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-button {
+    background-color: #2fb5ac;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-note {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.time {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.map-form {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #2C2C2C;
+    padding: 75px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+footer .logo {
+    height: 50px;
+    width: auto;
+}
+
+footer .menu {
+    background-color: transparent;
+    padding: 9px 0 9px 0;
+    border-right: 0px solid #CBCBCB;
+}
+
+footer .menu a, .footer-phone {
+    color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-info {
+    color: #7B7B7B;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: underline;
+    color: #7B7B7B;
+}
+
+footer .submenu a {
+    color: #2C2C2C;
+}
+
+.dev span {
+    font-weight: 800;
 }
