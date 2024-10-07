@@ -6,36 +6,11 @@ ini_set('display_startup_errors', 1);
 //require_once "PHPMailerAutoload.php";
 require_once 'PHPMailer/PHPMailerAutoload.php';
 
-
-$from = $_POST["field4"];
-$phone = $_POST["field5"];
-$what_to_deliver = $_POST["field3"];
-$from_where = $_POST["field1"];
-$to_where = $_POST["field2"];
-
-if (isset($from) && !empty($from))
-{
-    $msg = '<p><strong>Имя:</strong> ' . $from . '</p>';
-}
+$phone = $_POST["phone"];
 
 if (isset($phone) && !empty($phone))
 {
     $msg .= '<p><strong>Телефон:</strong> ' . $phone . '</p>';
-}
-
-if (isset($what_to_deliver) && !empty($what_to_deliver))
-{
-    $msg .= '<p><strong>Что доставить:</strong> ' . $what_to_deliver . '</p>';
-}
-
-if (isset($from_where) && !empty($from_where))
-{
-    $msg .= '<p><strong>Откуда:</strong> ' . $from_where . '</p>';
-}
-
-if (isset($to_where) && !empty($to_where))
-{
-    $msg .= '<p><strong>Куда:</strong> ' . $to_where . '</p>';
 }
 
 $mail = new PHPMailer(true);
@@ -51,10 +26,8 @@ $mail->Password = 'tbscecrgqonnpfyl';//"vv548w79FKWPN";
 $mail->SetFrom("slb-system@ya.ru", "slb-system");
 
 $mail->AddAddress("alekcandrmain@gmail.com","Александр");
-$mail->AddAddress("sosnovskij_na@mail.ru","Николай");
-//$mail->AddAddress("glob34@yandex.ru","Илья");
 
-$mail->Subject = 'Заявка с сайта slb-system.by';
+$mail->Subject = 'Заявка с сайта Инкомрем';
 $mail->IsHTML(true);
 $mail->Body = $msg;
 
