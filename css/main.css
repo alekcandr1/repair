@@ -12,6 +12,11 @@
     display: none;
 }
 
+.phone-mobile-ver {
+    display: none;
+    font-size: 16px;
+}
+
 /* Preloader */
 #preloader {
     position: fixed;
@@ -1687,9 +1692,17 @@ footer .submenu {
         flex-direction: column;
         align-items: flex-start;
     }
+    .phone-mobile-ver {
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
 
     header {
         align-items: flex-start;
+        padding: 20px 10px 10px 10px;
     }
 
     .menu-icon {
@@ -1848,8 +1861,12 @@ footer .submenu {
     }
 
     .logo {
-        height: 40px;
+        height: 35px;
         width: auto;
+    }
+    .menu-icon {
+        width: 25px;
+        height: 17px;
     }
 
     .first-h2 {
@@ -1893,6 +1910,10 @@ footer .submenu {
     .popup-text button, .popup-text input {
         justify-content: center;
     }
+   a.phone-white {
+        color: #f5f5f5;
+        text-decoration: none;
+    }
 
     #first .btn {
         width: 270px;
@@ -1909,5 +1930,8 @@ footer .submenu {
     }
     #first {
         padding-top: 80px;
+    }
+    .popup-content {
+        max-width: 320px;
     }
 }

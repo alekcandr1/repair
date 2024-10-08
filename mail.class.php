@@ -1,13 +1,11 @@
 <?php
-/*ini_set('error_reporting', E_ALL);
+ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-*/
-//require_once "PHPMailerAutoload.php";
-require_once 'PHPMailer/PHPMailerAutoload.php';
+require_once "PHPMailerAutoload.php";
 
 $phone = $_POST["phone"];
-
+$msg = '';
 if (isset($phone) && !empty($phone))
 {
     $msg .= '<p><strong>Телефон:</strong> ' . $phone . '</p>';
@@ -31,9 +29,7 @@ $mail->Subject = 'Заявка с сайта Инкомрем';
 $mail->IsHTML(true);
 $mail->Body = $msg;
 
-
-//if ($from == "" || $phone == "" || $what_to_deliver == "" || $from_where == "" || $to_where == "") {
-if ($from == "" || $phone == "") {
+if ($phone == "") {
     echo "Заполните все поля формы.";
 } else {
 
