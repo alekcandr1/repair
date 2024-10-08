@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^mail\..*$ [NC]
+RewriteRule ^.* - [F]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 46.53.232.0/21

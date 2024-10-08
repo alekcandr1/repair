@@ -1,6 +1,17 @@
 .price-section {
     display: flex !important;
 }
+a.phone-white {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+.temn-fon .temn-fon2, .temn-fon .temn-fon3  {background-color: rgba(0, 0, 0, 0.7); bottom: 0; cursor: default; left: 0; opacity: 1; position: fixed; right: 0; top: 0; visibility: visible; z-index: 99999; -webkit-transition: opacity .5s; -moz-transition: opacity .5s; -ms-transition: opacity .5s; -o-transition: opacity .5s; transition: opacity .5s;}
+.ppp3 {display: block;}
+.ppp4 {display: none;}
+.popup-zv span {font-size: 18px; display: block;
+    padding-top: 15px;}
+.popup-zv {font-size: 25px; background-color: #fff; border: 3px solid #fff;display: inline-block;left: 50%; opacity: 1; padding: 15px;width: 300px; position: fixed; text-align: center; top: 40%; visibility: visible; z-index: 999999; padding: 30px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: opacity .5s, top .5s; -moz-transition: opacity .5s, top .5s; -ms-transition: opacity .5s, top .5s; -o-transition: opacity .5s, top .5s; transition: opacity .5s, top .5s; border-radius: 11px; -webkit-transition: all .4s; -o-transition: all .4s; -moz-transition: all .4s; -ms-transition: all .4s; transition: all .4s;}
+.close01 {cursor: pointer; font-size: 19px; border-bottom: 1px dashed #000; display: block; width: max-content;  margin: auto; padding-top: 15px;}
 
 .logo-location {
     display: flex;
@@ -12,9 +23,8 @@
     display: none;
 }
 
-.phone-mobile-ver {
+.phone-mobile-ver, .head-contact {
     display: none;
-    font-size: 16px;
 }
 
 /* Preloader */
@@ -171,7 +181,7 @@ header {
     border-right: 1px solid #CBCBCB;
 }
 
-.social {
+.social, .social2 {
     padding: 0 30px;
     border-right: 1px solid #CBCBCB;
     display: flex;
@@ -1692,10 +1702,21 @@ footer .submenu {
         flex-direction: column;
         align-items: flex-start;
     }
+    .head-contact {
+        display: flex;
+        padding: 70px 10px 0 10px;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .social2 {
+        padding: 0 0;
+        border-right: 0;
+        gap: 10px;
+
+    }
     .phone-mobile-ver {
         display: block;
-        padding-left: 10px;
-        padding-top: 10px;
         font-size: 18px;
         font-weight: 500;
     }
@@ -1929,9 +1950,13 @@ footer .submenu {
         z-index: 9;
     }
     #first {
-        padding-top: 80px;
+        padding-top: 0;
     }
     .popup-content {
         max-width: 320px;
+    }
+    .first-points {
+        font-size: 15px;
+        line-height: 7px;
     }
 }
