@@ -1,5 +1,7 @@
+<!-- HEADER -->
 <?php include 'header.php'; ?>
 
+<!-- ПЕРВЫЙ ЭКРАН -->
 <section id="first">
     <div class="wrap first-points">
         <span>Ремонт в день выезда</span>
@@ -9,7 +11,7 @@
     </div>
     <div class="first-content blue-bg">
         <div class="wrap first-one">
-            <h1 class="fade-in"><span class="blue-text">Ремонт</span> холодильников, <br />стиральных машин и посудомоек
+            <h1 class="fade-in h1-index"><span class="blue-text">Ремонт</span> холодильников, <br />стиральных машин и посудомоек
             </h1>
             <div class="first-img">
                 <div class="grid first-content2">
@@ -39,37 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="preim grid wrap">
-                <div class="preim-wrap">
-                    <div class="preim-item">
-                        <span>- 01</span>
-                        <h3>Быстрый выезд мастера</h3>
-                        <p>Среднее время выезда мастера - 40 мин. Оперативно реагируем на заявки с 8 до 22 и работаем
-                            без
-                            выходных.</p>
-                    </div>
-                    <div class="preim-item">
-                        <span>- 02</span>
-                        <h3>Ремонт в день обращения</h3>
-                        <p>Опыт мастеров, а также наличие необходимых инструментов и запчастей позволяет отремонтировать
-                            большинство неисправностей в течение часа.</p>
-                    </div>
-                </div>
-                <div class="preim-wrap">
-                    <div class="preim-item">
-                        <span>- 03</span>
-                        <h3>Гарантия на все виды работ</h3>
-                        <p>По окончании работ выписываем гарантийный талон на срок от 6 месяцев
-                            на ремонт и запчасти.</p>
-                    </div>
-                    <div class="preim-item">
-                        <span>- 04</span>
-                        <h3>Доступные цены</h3>
-                        <p>Цены на ремонт и диагностику от 20 руб.
-                            Предоставляем скидки пенсионерам и многодетным семьям до 15%.</p>
-                    </div>
-                </div>
-            </div>
+            <?php include 'profits.php'; ?>
             <div class="first-how wrap grid">
                 <div>
                     <p class="how-head">Как мы работаем</p>
@@ -131,6 +103,8 @@
         </div>
     </div>
 </section>
+
+<!-- УСЛУГИ -->
 <section id="services">
     <div class="wrap grid">
         <h2>Что мы ремонтируем</h2>
@@ -170,71 +144,19 @@
         </div>
     </div>
 </section>
-<section id="sale">
-    <div class="sale grid wrap">
-        <div class="sale-left">
-            <div class="sale-top">
-                <div class="sale-point">Скидки</div>
-                <h2>Пенсионерам и многодетным<br>семьям скидка до 15%</h2>
-            </div>
-            <div class="sale-bottom">
-                <div class="sale-texts">
-                    Задать вопросы можно по телефону <a class="phone-white" href="tel:+375292462111">+375 (29)
-                    246-21-11</a><br />
-                    Либо оставьте заявку и мы вам перезвоним:
-                </div>
-                <form class="callback-form" action="mail.class.php" method="post">
-                    <input name="phone" type="tel" class="mask-phone" placeholder="+375 (XX) XXX-XX-XX" required>
-                    <button type="submit">
-                        Перезвоните мне
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                            <path d="M14.3952 7.56808L8.27441 13.689C8.12556 13.8319 7.9266 13.9108 7.72024 13.9087C7.51388 13.9067 7.31655 13.8237 7.17062 13.6778C7.0247 13.5319 6.94179 13.3346 6.9397 13.1282C6.93762 12.9218 7.01651 12.7229 7.15946 12.574L11.9346 7.79818H1.16366C0.956428 7.79532 0.758651 7.71099 0.613115 7.56344C0.46758 7.41588 0.385986 7.21696 0.385986 7.00971C0.385986 6.80245 0.46758 6.60353 0.613115 6.45598C0.758651 6.30842 0.956428 6.22409 1.16366 6.22123H11.9346L7.15961 1.44568C7.08395 1.37302 7.02355 1.286 6.98195 1.18971C6.94034 1.09342 6.91836 0.989794 6.9173 0.884904C6.91624 0.780013 6.93612 0.675965 6.97577 0.578852C7.01542 0.481739 7.07405 0.393513 7.14822 0.31934C7.22239 0.245167 7.31062 0.186539 7.40773 0.146887C7.50484 0.107236 7.60889 0.0873584 7.71378 0.0884192C7.81867 0.08948 7.9223 0.111458 8.01859 0.153065C8.11488 0.194672 8.2019 0.255073 8.27456 0.330731L14.3953 6.45178C14.4324 6.48868 14.4655 6.52933 14.4943 6.57283C14.5065 6.59143 14.5153 6.61228 14.5258 6.63133C14.5405 6.65683 14.5537 6.68308 14.5653 6.71008C14.575 6.73588 14.5831 6.76213 14.5897 6.78898C14.5963 6.81178 14.6055 6.83398 14.6101 6.85753C14.6304 6.95953 14.6304 7.06438 14.6101 7.16623C14.6055 7.18993 14.5963 7.21153 14.5897 7.23448C14.5831 7.26119 14.575 7.28748 14.5653 7.31323C14.5537 7.34023 14.5405 7.36663 14.5258 7.39213C14.5153 7.41148 14.5065 7.43158 14.4943 7.45063C14.4651 7.49278 14.432 7.53206 14.3953 7.56793L14.3952 7.56808Z"
-                                  fill="#F9F9F9" />
-                        </svg>
-                    </button>
-                </form>
-                <p class="conf">* Нажимая на кнопку "Перезвоните мне", вы даете согласие на обработку
-                    ваших <a href="https://incomrem.by/politica.html" target="_blank">персональных данных</a>.
-                </p>
-            </div>
-        </div>
-        <div class="sale-right"></div>
-    </div>
-</section>
+
+<!-- СКИДКИ -->
+<?php include 'sale.php'; ?>
+
+<!-- БРЕНДЫ -->
 <section id="brands">
     <div class="brands-wrap">
         <h2>Осуществляем ремонт техники всех марок</h2>
-        <div class="logo-container">
-            <div class="logos-rows">
-                <div class="logos top">
-                    <img src="./img/logos/logo1.png" alt="Logo 1">
-                    <img src="./img/logos/logo2.png" alt="Logo 2">
-                    <img src="./img/logos/logo3.png" alt="Logo 3">
-                    <img src="./img/logos/logo4.png" alt="Logo 4">
-                    <img src="./img/logos/logo5.png" alt="Logo 5">
-                    <img src="./img/logos/logo6.png" alt="Logo 6">
-                    <img src="./img/logos/logo7.png" alt="Logo 7">
-                    <img src="./img/logos/logo8.png" alt="Logo 8">
-                    <img src="./img/logos/logo9.png" alt="Logo 8">
-                    <img src="./img/logos/logo10.png" alt="Logo 8">
-                </div>
-                <div class="logos bottom">
-                    <img src="./img/logos/logo11.png" alt="Logo 1">
-                    <img src="./img/logos/logo12.png" alt="Logo 2">
-                    <img src="./img/logos/logo13.png" alt="Logo 3">
-                    <img src="./img/logos/logo14.png" alt="Logo 4">
-                    <img src="./img/logos/logo15.png" alt="Logo 5">
-                    <img src="./img/logos/logo16.png" alt="Logo 6">
-                    <img src="./img/logos/logo17.png" alt="Logo 6">
-                    <img src="./img/logos/logo18.png" alt="Logo 6">
-                    <img src="./img/logos/logo19.png" alt="Logo 6">
-                    <img src="./img/logos/logo20.png" alt="Logo 6">
-
-                </div>
-            </div>
-        </div>
+        <?php include 'brands.php'; ?>
     </div>
 </section>
+
+<!-- О КОМПАНИИ -->
 <section id="about">
     <div class="video grid">
         <video autoplay loop muted class="video-background">
@@ -316,6 +238,8 @@
 
     </div>
 </section>
+
+<!-- ЦЕНЫ -->
 <section id="price" class="df price-section">
     <div class="price-wrap wrap grid">
         <div class="price-left">
@@ -543,4 +467,5 @@
     </div>
 </section>
 
+<!-- FOOTER -->
 <?php include 'footer.php'; ?>

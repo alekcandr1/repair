@@ -42,7 +42,9 @@
 
 <header>
     <div class="logo-location">
-        <img src="img/logo.png" alt="Инкомрем - ремонт бытовой техники" class="logo" />
+        <a href="https://incomrem.by/">
+            <img src="img/logo.png" alt="Инкомрем - ремонт бытовой техники" class="logo" />
+        </a>
         <div class="location-point fs14">Брест - Пинск</div>
     </div>
     <div class="header-right">
@@ -63,13 +65,13 @@
                     </svg>
                 </a>
                 <div class="submenu">
-                    <a href="#">Ремонт холодильников</a>
-                    <a href="#">Ремонт холодильных шкафов</a>
-                    <a href="#">Ремонт холодильных витрин</a>
-                    <a href="#">Ремонт стиральных машин</a>
-                    <a href="#">Ремонт посудомоек</a>
-                    <a href="#">Ремонт кофеварок</a>
-                    <a href="#">Ремонт духовых шкафов</a>
+                    <a href="https://incomrem.by/remont-holodilnikov.html">Ремонт холодильников</a>
+                    <a href="https://incomrem.by/remont-holodilnyh-shkafov.html">Ремонт холодильных шкафов</a>
+                    <a href="https://incomrem.by/remont-holodilnyh-vitrin.html">Ремонт холодильных витрин</a>
+                    <a href="https://incomrem.by/remont-stiralnyh-mashin.html">Ремонт стиральных машин</a>
+                    <a href="https://incomrem.by/remont-posydomoek.html">Ремонт посудомоек</a>
+                    <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
+                    <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
                 </div>
             </div>
             <a href="#sale">Скидки</a>

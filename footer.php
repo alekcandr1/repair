@@ -1,4 +1,3 @@
-
 <section id="contacts" class="map-section df">
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0aded40812f00f7db8cde04239bdc6e5ae5dc9480cb4b7e3e1573aef1d3d7e44&amp;source=constructor"
             frameborder="0"
@@ -28,22 +27,14 @@
         <div class="form-block">
             <p class="map-pre-head">Контакты</p>
             <p class="map-head">Расскажите нам <br />о своей проблеме</p>
-            <p class="map-phone"><a class="phone-white" href="tel:+375292462111">+375 (29) 246-21-11</a></p>
             <div class="time">
                 <p>Диспетчерская:<br />с 8:00 до 22:00</p>
-                <p>Выезд на ремонт:<br />Пн-Вс: с 10:00 до 22:00</p>
+                <!--                <p>Выезд на ремонт:<br />Пн-Вс: с 10:00 до 22:00</p>-->
+                <p class="map-phone"><a class="phone-white" href="tel:+375292462111">+375 (29) 246-21-11</a></p>
             </div>
 
-            <form action="mail.class.php" class="map-form callback-form" method="post">
-                <input name="phone" type="tel" class="mask-phone" placeholder="+375 (XX) XXX-XX-XX" required>
-                <button type="submit">
-                    Перезвоните мне
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                        <path d="M14.3952 7.56808L8.27441 13.689C8.12556 13.8319 7.9266 13.9108 7.72024 13.9087C7.51388 13.9067 7.31655 13.8237 7.17062 13.6778C7.0247 13.5319 6.94179 13.3346 6.9397 13.1282C6.93762 12.9218 7.01651 12.7229 7.15946 12.574L11.9346 7.79818H1.16366C0.956428 7.79532 0.758651 7.71099 0.613115 7.56344C0.46758 7.41588 0.385986 7.21696 0.385986 7.00971C0.385986 6.80245 0.46758 6.60353 0.613115 6.45598C0.758651 6.30842 0.956428 6.22409 1.16366 6.22123H11.9346L7.15961 1.44568C7.08395 1.37302 7.02355 1.286 6.98195 1.18971C6.94034 1.09342 6.91836 0.989794 6.9173 0.884904C6.91624 0.780013 6.93612 0.675965 6.97577 0.578852C7.01542 0.481739 7.07405 0.393513 7.14822 0.31934C7.22239 0.245167 7.31062 0.186539 7.40773 0.146887C7.50484 0.107236 7.60889 0.0873584 7.71378 0.0884192C7.81867 0.08948 7.9223 0.111458 8.01859 0.153065C8.11488 0.194672 8.2019 0.255073 8.27456 0.330731L14.3953 6.45178C14.4324 6.48868 14.4655 6.52933 14.4943 6.57283C14.5065 6.59143 14.5153 6.61228 14.5258 6.63133C14.5405 6.65683 14.5537 6.68308 14.5653 6.71008C14.575 6.73588 14.5831 6.76213 14.5897 6.78898C14.5963 6.81178 14.6055 6.83398 14.6101 6.85753C14.6304 6.95953 14.6304 7.06438 14.6101 7.16623C14.6055 7.18993 14.5963 7.21153 14.5897 7.23448C14.5831 7.26119 14.575 7.28748 14.5653 7.31323C14.5537 7.34023 14.5405 7.36663 14.5258 7.39213C14.5153 7.41148 14.5065 7.43158 14.4943 7.45063C14.4651 7.49278 14.432 7.53206 14.3953 7.56793L14.3952 7.56808Z"
-                              fill="#F9F9F9" />
-                    </svg>
-                </button>
-            </form>
+            <?php include 'form.php'; ?>
+
             <p class="conf">* Нажимая на кнопку "Перезвоните мне", вы даете согласие на обработку
                 ваших <a href="https://incomrem.by/politica.html" target="_blank">персональных данных</a>.
             </p>
@@ -52,7 +43,7 @@
 </section>
 <footer class="df">
     <div class="footer grid wrap">
-        <div><img src="img/logo2.png" alt="Инкомрем - ремонт бытовой техники" class="logo" /></div>
+        <div><a href="https://incomrem.by/"><img src="img/logo2.png" alt="Инкомрем - ремонт бытовой техники" class="logo" /></a></div>
         <nav class="menu">
             <div class="menu-item">
                 <a href="#services" class="menu-item-wrap">
@@ -70,13 +61,13 @@
                     </svg>
                 </a>
                 <div class="submenu">
-                    <a href="#">Ремонт холодильников</a>
-                    <a href="#">Ремонт холодильных шкафов</a>
-                    <a href="#">Ремонт холодильных витрин</a>
-                    <a href="#">Ремонт стиральных машин</a>
-                    <a href="#">Ремонт посудомоек</a>
-                    <a href="#">Ремонт кофеварок</a>
-                    <a href="#">Ремонт духовых шкафов</a>
+                    <a href="https://incomrem.by/remont-holodilnikov.html">Ремонт холодильников</a>
+                    <a href="https://incomrem.by/remont-holodilnyh-shkafov.html">Ремонт холодильных шкафов</a>
+                    <a href="https://incomrem.by/remont-holodilnyh-vitrin.html">Ремонт холодильных витрин</a>
+                    <a href="https://incomrem.by/remont-stiralnyh-mashin.html">Ремонт стиральных машин</a>
+                    <a href="https://incomrem.by/remont-posydomoek.html">Ремонт посудомоек</a>
+                    <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
+                    <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
                 </div>
             </div>
             <a href="#sale">Скидки</a>
@@ -218,6 +209,19 @@
     $('.mask-phone').mask('+375 (99) 999-99-99');
 </script>
 
+<script>
+    document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            if (this.checked) {
+                this.parentElement.classList.add('selected-item');
+            } else {
+                this.parentElement.classList.remove('selected-item');
+            }
+        });
+    });
+
+</script>
+
 
 <!-- Окно после отправки заявки -->
 <script type="text/javascript">
@@ -263,31 +267,31 @@
 </script>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () {
-            (m[i].a = m[i].a || []).push(arguments)
-        };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-            if (document.scripts[j].src === r) {
-                return;
-            }
-        }
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+<!--<script type="text/javascript">-->
+<!--    (function (m, e, t, r, i, k, a) {-->
+<!--        m[i] = m[i] || function () {-->
+<!--            (m[i].a = m[i].a || []).push(arguments)-->
+<!--        };-->
+<!--        m[i].l = 1 * new Date();-->
+<!--        for (var j = 0; j < document.scripts.length; j++) {-->
+<!--            if (document.scripts[j].src === r) {-->
+<!--                return;-->
+<!--            }-->
+<!--        }-->
+<!--        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)-->
+<!--    })-->
+<!--    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
 
-    ym(97040467, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-    });
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/97040467" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
+<!--    ym(97040467, "init", {-->
+<!--        clickmap: true,-->
+<!--        trackLinks: true,-->
+<!--        accurateTrackBounce: true,-->
+<!--        webvisor: true-->
+<!--    });-->
+<!--</script>-->
+<!--<noscript>-->
+<!--    <div><img src="https://mc.yandex.ru/watch/97040467" style="position:absolute; left:-9999px;" alt="" /></div>-->
+<!--</noscript>-->
 <!-- /Yandex.Metrika counter -->
 
 </body>
