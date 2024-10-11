@@ -110,7 +110,7 @@
             </div>
             <div class="footer-links">
                 <a href="https://incomrem.by/politica.html" target="_blank">Политика конфиденциальности</a>
-                <a href="#" target="_blank">Карта сайта</a>
+                <a href="https://incomrem.by/sitemap.xml" target="_blank">Карта сайта</a>
                 <a href="https://www.instagram.com/alekcandr1/" class="dev" target="_blank">Разработка сайта <span>AB Coding</span></a>
             </div>
         </div>

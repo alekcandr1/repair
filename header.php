@@ -21,9 +21,9 @@
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css?v=2.0">
+    <link rel="stylesheet" href="./css/fonts.css?v=2.0">
+    <link rel="stylesheet" href="./css/main.css?v=2.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
