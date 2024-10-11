@@ -19,11 +19,10 @@ $mail->SMTPAuth = true;
 $mail->Port = 465; //25   465    143
 $mail->SMTPDebug = 0;
 
-$mail->Username = "slb-system@ya.ru";
-$mail->Password = 'tbscecrgqonnpfyl';//"vv548w79FKWPN";
-$mail->SetFrom("slb-system@ya.ru", "Incomrem");
+$mail->Username = "Incomrem111@yandex.by";
+$mail->Password = 'rjbsadwzfqfuglsw';
+$mail->SetFrom("Incomrem111@yandex.by", "Incomrem");
 
-$mail->AddAddress("alekcandrmain@gmail.com","Александр");
 $mail->AddAddress("zayv@incomrem.by","Инкомрем");
 
 $mail->Subject = 'Заявка с сайта Инкомрем';

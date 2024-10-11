@@ -141,10 +141,10 @@
                 <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
                 <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
             </div>
-            <a href="#sale">Скидки</a>
-            <a href="#about">О нас</a>
-            <a class="price-section" href="#price">Цены</a>
-            <a href="#contacts">Контакты</a>
+            <a href="https://incomrem.by/#sale">Скидки</a>
+            <a href="https://incomrem.by/#about">О нас</a>
+            <a href="https://incomrem.by/#price" class="price-section">Цены</a>
+            <a href="https://incomrem.by/#contacts">Контакты</a>
             <a class="phone db" href="tel:+375292462111">+375 (29) 246-21-11</a>
             <div class="social">
                 <a href="https://t.me/+375292462111" target="_blank">
