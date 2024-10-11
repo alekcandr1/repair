@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ремонт холодильников, стиральных машин, посудомоек и другой бытовой техники. Брест - Пинск.</title>
-    <meta name="description"
-          content="Ремонт холодильников и стиральных машин  - быстро и качественно! Гарантия качества и низкие цены.">
+    <title><?php echo $title; ?></title>
+    <meta name="description" content="<?php echo $description; ?>">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://incomrem.by">
@@ -14,13 +13,11 @@
     <meta property="og:image:width" content="968">
     <meta property="og:image:height" content="504">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:title" content="Ремонт бытовой техники любой сложности - быстро и качественно!">
-    <meta property="og:description"
-          content="Ремонт бытовой техники любой сложности - быстро и качественно! Гарантия качества и низкие цены.">
+    <meta property="og:title" content="<?php echo $title; ?>">
+    <meta property="og:description" content="<?php echo $description; ?>">
     <meta property="og:site_name" content="Ремонт бытовой техники">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description"
-          content="Ремонт бытовой техники любой сложности - быстро и качественно! Гарантия качества и низкие цены.">
+    <meta name="twitter:description" content="<?php echo $description ?>">
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
@@ -121,7 +118,29 @@
             </svg>
         </button>
         <nav class="menu-mobile">
-            <a href="#services">Услуги</a>
+            <div id="services-link" class="">
+                <span class="db">Услуги</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_156_1033)">
+                        <path d="M6.46824 9.33358L11.8083 3.99343C11.9319 3.86992 12 3.70504 12 3.52924C12 3.35343 11.9319 3.18856 11.8083 3.06504L11.4151 2.67178C11.1589 2.41588 10.7425 2.41588 10.4867 2.67178L6.00249 7.15604L1.51326 2.6668C1.38965 2.54329 1.22487 2.4751 1.04916 2.4751C0.873262 2.4751 0.708483 2.54329 0.584777 2.6668L0.191708 3.06007C0.068099 3.18368 1.86917e-06 3.34846 1.86149e-06 3.52426C1.8538e-06 3.70006 0.068099 3.86494 0.191708 3.98845L5.53664 9.33358C5.66064 9.45738 5.8262 9.52538 6.0022 9.52499C6.17888 9.52538 6.34434 9.45738 6.46824 9.33358Z"
+                              fill="#414141" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_156_1033">
+                            <rect width="12" height="12" fill="white" transform="translate(12) rotate(90)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div id="submenu-mobile" class="hidden">
+                <a href="https://incomrem.by/remont-holodilnikov.html">Ремонт холодильников</a>
+                <a href="https://incomrem.by/remont-holodilnyh-shkafov.html">Ремонт холодильных шкафов</a>
+                <a href="https://incomrem.by/remont-holodilnyh-vitrin.html">Ремонт холодильных витрин</a>
+                <a href="https://incomrem.by/remont-stiralnyh-mashin.html">Ремонт стиральных машин</a>
+                <a href="https://incomrem.by/remont-posydomoek.html">Ремонт посудомоек</a>
+                <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
+                <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
+            </div>
             <a href="#sale">Скидки</a>
             <a href="#about">О нас</a>
             <a class="price-section" href="#price">Цены</a>

@@ -1,12 +1,16 @@
-<!-- HEADER -->
-<?php include 'header.php'; ?>
-
 <?php
     $var1 = "посудомоек";
     $var2 = "Посудомойка";
     $var3 = "посудомойки";
+
+    $title = "Ремонт " . $var1 . " в Пинске и Бресте";
+    $description = "Ремонт " . $var1 . " в Пинске и Бресте  - быстро и качественно! Гарантия качества и низкие цены.";
+
     $geo = "";
 ?>
+
+<!-- HEADER -->
+<?php include 'header.php'; ?>
 
 <!-- ПЕРВЫЙ ЭКРАН -->
 <section id="first">
@@ -21,7 +25,7 @@
             <h1 class="fade-in h1-index">
                 <span class="blue-text">Ремонт</span> <?php echo $var1 . " " . $geo; ?>
             </h1>
-            <div class="first-img">
+            <div class="first-img img3">
                 <div class="grid first-content2">
                     <div class="first-headers">
                         <div class="locations">
@@ -59,23 +63,23 @@
                         <input id="type" name="type" value="<?php echo $var2; ?>" required>
                         <label for="type" class="label-type"></label>
 
-                        <input id="1" type="radio" name="issue" value="Бьет током" required>
+                        <input id="1" type="radio" name="issue" value="Не запускается" required>
                         <label for="1" class="repair-item">
-                            <p class="repair-head">Бьет током</p>
-                            <p class="repair-desc">Во время работы машинка бьется током</p>
+                            <p class="repair-head">Не запускается</p>
+                            <p class="repair-desc">Посудомойка не реагирует на включение</p>
                         </label>
 
 
                         <input id="2" type="radio" name="issue" value="Вода не набирается" required>
                         <label for="2" class="repair-item">
                             <p class="repair-head">Вода не набирается</p>
-                            <p class="repair-desc">При запуске стирки вода не поступает в бак.</p>
+                            <p class="repair-desc">При запуске программы вода не поступает.</p>
                         </label>
 
-                        <input id="3" type="radio" name="issue" value="Вода не сливается" required>
+                        <input id="3" type="radio" name="issue" value="Не стартует мойка" required>
                         <label for="3" class="repair-item">
-                            <p class="repair-head">Вода не сливается</p>
-                            <p class="repair-desc">После завершения цикла стирки вода остается в баке.</p>
+                            <p class="repair-head">Не стартует мойка</p>
+                            <p class="repair-desc">После запуска программы ничего не происходит.</p>
                         </label>
 
                         <input id="4" type="radio" name="issue" value="Засор" required>
@@ -84,10 +88,10 @@
                             <p class="repair-desc">Вода не сливается по причине засора</p>
                         </label>
 
-                        <input id="5" type="radio" name="issue" value="Не включается" required>
+                        <input id="5" type="radio" name="issue" value="Не сливается вода" required>
                         <label for="5" class="repair-item">
-                            <p class="repair-head">Не включается</p>
-                            <p class="repair-desc">Стиральная машина не реагирует на запуск</p>
+                            <p class="repair-head">Не сливается вода</p>
+                            <p class="repair-desc">Вода не уходит из посудомойки</p>
                         </label>
 
                         <input id="6" type="radio" name="issue" value="Не выключается" required>
@@ -96,34 +100,28 @@
                             <p class="repair-desc">Машинка не отключается после выполнения программы</p>
                         </label>
 
-                        <input id="7" type="radio" name="issue" value="Не крутится барабан" required>
+                        <input id="7" type="radio" name="issue" value="Плохо отмывает посуду" required>
                         <label for="7" class="repair-item">
-                            <p class="repair-head">Не крутится барабан</p>
-                            <p class="repair-desc">При запуске программы не вращается барабан</p>
+                            <p class="repair-head">Плохо моет</p>
+                            <p class="repair-desc">На посуде остаётся грязь или пятна</p>
                         </label>
 
                         <input id="8" type="radio" name="issue" value="Течет" required>
                         <label for="8" class="repair-item">
                             <p class="repair-head">Течет</p>
-                            <p class="repair-desc">Во время стирки происходит утечка воды</p>
+                            <p class="repair-desc">Во время мойки происходит утечка воды</p>
                         </label>
 
                         <input id="9" type="radio" name="issue" value="Не греет воду" required>
                         <label for="9" class="repair-item">
                             <p class="repair-head">Не греет воду</p>
-                            <p class="repair-desc">Стирка выполняется, но вода остается холодной</p>
+                            <p class="repair-desc">Мойка выполняется, но вода остается холодной</p>
                         </label>
 
                         <input id="10" type="radio" name="issue" value="Шумит" required>
                         <label for="10" class="repair-item">
                             <p class="repair-head">Шумит</p>
-                            <p class="repair-desc">По время стирки стук, шум или посторонние звуки</p>
-                        </label>
-
-                        <input id="11" type="radio" name="issue" value="Сломалась дверь" required>
-                        <label for="11" class="repair-item">
-                            <p class="repair-head">Сломалась дверь</p>
-                            <p class="repair-desc">Дверь люка закрывается, но не блокируется.</p>
+                            <p class="repair-desc">Во время мойки стук, шум или посторонние звуки</p>
                         </label>
 
                     </div>

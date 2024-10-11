@@ -121,6 +121,22 @@
 
 <?php include 'popups.php'; ?>
 
+
+<!-- Мобильное меню -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Получаем элементы
+        const servicesLink = document.getElementById('services-link');
+        const submenuMobile = document.getElementById('submenu-mobile');
+
+        // Добавляем обработчик события клика на "Услуги"
+        servicesLink.addEventListener('click', function() {
+            // Переключаем класс "hidden" для показа или скрытия подменю
+            submenuMobile.classList.toggle('hidden');
+        });
+    });
+</script>
+
 <!-- Вкладки -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {

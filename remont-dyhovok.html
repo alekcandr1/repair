@@ -1,12 +1,16 @@
-<!-- HEADER -->
-<?php include 'header.php'; ?>
-
 <?php
     $var1 = "духовок";
     $var2 = "Духовка";
     $var3 = "духовки";
+
+    $title = "Ремонт " . $var1 . " в Пинске и Бресте";
+    $description = "Ремонт " . $var1 . " в Пинске и Бресте  - быстро и качественно! Гарантия качества и низкие цены.";
+
     $geo = "";
 ?>
+
+<!-- HEADER -->
+<?php include 'header.php'; ?>
 
 <!-- ПЕРВЫЙ ЭКРАН -->
 <section id="first">
@@ -21,7 +25,7 @@
             <h1 class="fade-in h1-index">
                 <span class="blue-text">Ремонт</span> <?php echo $var1 . " " . $geo; ?>
             </h1>
-            <div class="first-img">
+            <div class="first-img img5">
                 <div class="grid first-content2">
                     <div class="first-headers">
                         <div class="locations">
@@ -59,71 +63,70 @@
                         <input id="type" name="type" value="<?php echo $var2; ?>" required>
                         <label for="type" class="label-type"></label>
 
-                        <input id="1" type="radio" name="issue" value="Бьет током" required>
+                        <input id="1" type="radio" name="issue" value="Отключается при работе" required>
                         <label for="1" class="repair-item">
-                            <p class="repair-head">Бьет током</p>
-                            <p class="repair-desc">Во время работы машинка бьется током</p>
+                            <p class="repair-head">Отключается при работе</p>
+                            <p class="repair-desc">Во время работы духовка отключается.</p>
                         </label>
 
-
-                        <input id="2" type="radio" name="issue" value="Вода не набирается" required>
+                        <input id="2" type="radio" name="issue" value="Долго нагревается" required>
                         <label for="2" class="repair-item">
-                            <p class="repair-head">Вода не набирается</p>
-                            <p class="repair-desc">При запуске стирки вода не поступает в бак.</p>
+                            <p class="repair-head">Долго нагревается</p>
+                            <p class="repair-desc">Длительный нагрев до заданной температуры.</p>
                         </label>
 
-                        <input id="3" type="radio" name="issue" value="Вода не сливается" required>
+                        <input id="3" type="radio" name="issue" value="Не греет" required>
                         <label for="3" class="repair-item">
-                            <p class="repair-head">Вода не сливается</p>
-                            <p class="repair-desc">После завершения цикла стирки вода остается в баке.</p>
+                            <p class="repair-head">Не греет</p>
+                            <p class="repair-desc">Температура в духовке не повышается.</p>
                         </label>
 
-                        <input id="4" type="radio" name="issue" value="Засор" required>
+                        <input id="4" type="radio" name="issue" value="Перегревается" required>
                         <label for="4" class="repair-item">
-                            <p class="repair-head">Засор</p>
-                            <p class="repair-desc">Вода не сливается по причине засора</p>
+                            <p class="repair-head">Перегревается</p>
+                            <p class="repair-desc">Температура в духовке больше заданной.</p>
                         </label>
 
                         <input id="5" type="radio" name="issue" value="Не включается" required>
                         <label for="5" class="repair-item">
                             <p class="repair-head">Не включается</p>
-                            <p class="repair-desc">Стиральная машина не реагирует на запуск</p>
+                            <p class="repair-desc">Духовка не реагирует на запуск.</p>
                         </label>
 
                         <input id="6" type="radio" name="issue" value="Не выключается" required>
                         <label for="6" class="repair-item">
                             <p class="repair-head">Не выключается</p>
-                            <p class="repair-desc">Машинка не отключается после выполнения программы</p>
+                            <p class="repair-desc">Духовка не реагирует на выключение.</p>
                         </label>
 
-                        <input id="7" type="radio" name="issue" value="Не крутится барабан" required>
+                        <input id="7" type="radio" name="issue" value="Не работает дисплей" required>
                         <label for="7" class="repair-item">
-                            <p class="repair-head">Не крутится барабан</p>
-                            <p class="repair-desc">При запуске программы не вращается барабан</p>
+                            <p class="repair-head">Не работает дисплей</p>
+                            <p class="repair-desc">Дисплей духовки неисправен.</p>
                         </label>
 
-                        <input id="8" type="radio" name="issue" value="Течет" required>
+                        <input id="8" type="radio" name="issue" value="Не работает таймер" required>
                         <label for="8" class="repair-item">
-                            <p class="repair-head">Течет</p>
-                            <p class="repair-desc">Во время стирки происходит утечка воды</p>
+                            <p class="repair-head">Не работает таймер</p>
+                            <p class="repair-desc">Таймер духовки неисправен.</p>
                         </label>
 
-                        <input id="9" type="radio" name="issue" value="Не греет воду" required>
+                        <input id="9" type="radio" name="issue" value="Запах гари" required>
                         <label for="9" class="repair-item">
-                            <p class="repair-head">Не греет воду</p>
-                            <p class="repair-desc">Стирка выполняется, но вода остается холодной</p>
+                            <p class="repair-head">Запах гари</p>
+                            <p class="repair-desc">Духовка издаёт запах гари.</p>
                         </label>
 
                         <input id="10" type="radio" name="issue" value="Шумит" required>
                         <label for="10" class="repair-item">
                             <p class="repair-head">Шумит</p>
-                            <p class="repair-desc">По время стирки стук, шум или посторонние звуки</p>
+                            <p class="repair-desc">По время работы шум или посторонние звуки.</p>
                         </label>
 
-                        <input id="11" type="radio" name="issue" value="Сломалась дверь" required>
+                        <input id="11" type="radio" name="issue" value="Не работает гриль" required>
                         <label for="11" class="repair-item">
-                            <p class="repair-head">Сломалась дверь</p>
-                            <p class="repair-desc">Дверь люка закрывается, но не блокируется.</p>
+                            <p class="repair-head">Не работает гриль</p>
+                            <p class="repair-desc">Режим гриля не работает.</p>
                         </label>
 
                     </div>
@@ -138,7 +141,7 @@
 </section>
 
 <!-- ЦЕНЫ -->
-<section id="price" class="df price-section">
+<section id="price" class="df price-section dn">
     <div class="price-wrap wrap grid">
         <div class="price-left">
             <div class="price-left-texts">
