@@ -68,6 +68,8 @@
                     <a href="https://incomrem.by/remont-posydomoek.html">Ремонт посудомоек</a>
                     <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
                     <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
+                    <a href="https://incomrem.by/remont-obslyzhivanie-torgovyh-vitrin-shkafov.html">Ремонт и
+                        обслуживание<br />торговых витрин и шкафов</a>
                 </div>
             </div>
             <a href="#sale">Скидки</a>

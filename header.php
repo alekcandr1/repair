@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="./css/reset.css?v=2.0">
     <link rel="stylesheet" href="./css/fonts.css?v=2.0">
-    <link rel="stylesheet" href="./css/main.css?v=2.0">
+    <link rel="stylesheet" href="./css/main.css?v=5.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,19 @@
           rel="stylesheet">
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16506913961"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16506913961');
+</script>
 <body>
 <div id="preloader">
     <div class="loader"></div>
@@ -69,6 +82,8 @@
                     <a href="https://incomrem.by/remont-posydomoek.html">Ремонт посудомоек</a>
                     <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
                     <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
+                    <a href="https://incomrem.by/remont-obslyzhivanie-torgovyh-vitrin-shkafov.html">Ремонт и
+                        обслуживание<br />торговых витрин и шкафов</a>
                 </div>
             </div>
             <a href="#sale">Скидки</a>
@@ -140,6 +155,8 @@
                 <a href="https://incomrem.by/remont-posydomoek.html">Ремонт посудомоек</a>
                 <a href="https://incomrem.by/remont-kofevarok.html">Ремонт кофеварок</a>
                 <a href="https://incomrem.by/remont-dyhovok.html">Ремонт духовых шкафов</a>
+                <a href="https://incomrem.by/remont-obslyzhivanie-torgovyh-vitrin-shkafov.html">Ремонт и
+                    обслуживание<br />торговых витрин и шкафов</a>
             </div>
             <a href="https://incomrem.by/#sale">Скидки</a>
             <a href="https://incomrem.by/#about">О нас</a>

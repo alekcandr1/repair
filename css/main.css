@@ -35,6 +35,7 @@ a.phone-white {
 #submenu-mobile a {
     font-size: 19px;
 }
+
 #submenu-mobile li {
     margin-bottom: 10px;
 }
@@ -137,7 +138,6 @@ a.phone-white {
 .phone-mobile-ver, .head-contact {
     display: none;
 }
-
 
 
 /* Preloader */
@@ -275,6 +275,7 @@ header {
     opacity: 1;
     top: auto;
     transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
 .submenu a {
@@ -590,6 +591,11 @@ h2 {
 .img6 {
     background-image: url('../img/main6.jpg');
 }
+
+.img7 {
+    background-image: url('../img/main7.jpg');
+}
+
 .first-img.img6::before {
     background: rgba(0, 0, 0, 0.6);
 }
@@ -1335,6 +1341,7 @@ p.slogan-desc {
     font-size: 12px;
     margin-top: 10px;
 }
+
 .map-wrap .conf {
     padding-top: 10px;
 }
@@ -1632,6 +1639,19 @@ footer .submenu {
 
 /* Скрываем блок header-right на экранах 1640px и меньше */
 @media screen and (max-width: 1640px) {
+    .head-contact {
+        display: flex;
+        padding: 0 10px 0 10px;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .phone-mobile-ver {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+    }
 
     .menu-icon {
         width: 35px;
@@ -1779,6 +1799,13 @@ footer .submenu {
 }
 
 @media screen and (max-width: 1150px) {
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: #F5F5F5;
+        z-index: 20;
+    }
+
     .price-left-texts p.price-text {
         font-size: 15px;
     }
@@ -1841,7 +1868,7 @@ footer .submenu {
     }
 
     .first-points {
-        padding-top: 40px;
+        padding-top: 70px;
     }
 
     .first-one {

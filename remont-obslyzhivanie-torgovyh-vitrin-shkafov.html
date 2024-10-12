@@ -1,0 +1,257 @@
+<?php
+    $var1 = "торговых витрин и шкафов";
+    $var2 = "Торговая витрина или шкаф";
+    $var3 = "торговой витрины или шкафа";
+
+    $title = "Ремонт и обслуживание " . $var1 . " в Пинске и Бресте";
+    $description = "Ремонт и обслуживание " . $var1 . " в Пинске и Бресте  - быстро и качественно! Гарантия качества и низкие цены.";
+
+    $geo = "";
+?>
+
+<!-- HEADER -->
+<?php include 'header.php'; ?>
+
+<!-- ПЕРВЫЙ ЭКРАН -->
+<section id="first">
+    <div class="wrap first-points">
+        <span>Ремонт в день выезда</span>
+        <span>Оригинальные запчасти</span>
+        <span>Гарантия на все работы</span>
+        <span>Доступные цены</span>
+    </div>
+    <div class="first-content blue-bg">
+        <div class="wrap first-one">
+            <h1 class="fade-in h1-index">
+                <span class="blue-text">Ремонт и обслуживание</span> <?php echo $var1 . " " . $geo; ?>
+            </h1>
+            <div class="first-img img7">
+                <div class="grid first-content2">
+                    <div class="first-headers">
+                        <div class="locations">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                     fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.31948 3.01606L10.5479 2.22021L17.4221 6.51664L24.5098 2.22021V18.933L17.3356 23.5755L10.4613 19.279L8.17761 20.6631C8.77738 19.5213 9.45212 18.1948 10.0865 16.8223L10.4613 16.5743L17.3356 20.9572L20.6171 19.0657L22.6182 17.9065V5.79L17.4164 9.22714L11.9146 5.72079C11.3379 4.57892 10.4267 3.6389 9.31371 3.02183L9.31948 3.01606Z"
+                                          fill="#F9F9F9" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M6.1246 2.71606C9.26762 2.71606 11.8109 5.26508 11.8109 8.40234C11.8109 8.53498 11.8051 8.67339 11.7993 8.80603V8.8118C11.7474 12.7968 6.14767 22.3008 6.14767 22.3008C6.14767 22.3008 6.13037 22.272 6.09576 22.2201V22.3008C6.09576 22.3008 0.495995 12.791 0.444092 8.8118C0.444092 8.74259 0.444092 8.67339 0.449859 8.60418C0.449859 8.53498 0.444092 8.47154 0.444092 8.40234C0.444092 5.25932 2.99311 2.71606 6.13037 2.71606H6.1246ZM6.1246 5.05747C7.97004 5.05747 9.46947 6.55689 9.46947 8.40234C9.46947 10.2478 7.97004 11.7472 6.1246 11.7472C4.27916 11.7472 2.77973 10.2478 2.77973 8.40234C2.77973 6.55689 4.27916 5.05747 6.1246 5.05747Z"
+                                          fill="#F9F9F9" />
+                                    <path d="M6.12456 11.1129C7.62152 11.1129 8.83505 9.89936 8.83505 8.40239C8.83505 6.90542 7.62152 5.69189 6.12456 5.69189C4.62759 5.69189 3.41406 6.90542 3.41406 8.40239C3.41406 9.89936 4.62759 11.1129 6.12456 11.1129Z"
+                                          fill="#F9F9F9" />
+                                </svg>
+                            </div>
+                            <div>Брест - Пинск</div>
+                        </div>
+                        <h2 class="first-h2">Диагностика и профессиональный ремонт с выездом на дом и гарантией от
+                            6 месяцев</h2>
+                    </div>
+                    <div class="btns">
+                        <div class=""><a href="#popup1" class="btn btn-blue">Вызвать мастера</a></div>
+                        <div class=""><a href="#popup2" class="btn btn-tr">Получить консультацию</a></div>
+                    </div>
+                </div>
+            </div>
+            <?php include 'profits.php'; ?>
+
+            <div class="what-need-repair wrap grid">
+                <h2>Что сломалось?</h2>
+                <form class="callback-form1" action="mail.class2.php" method="post">
+
+                    <div class="repair-items">
+                        <input id="type" name="type" value="<?php echo $var2; ?>" required>
+                        <label for="type" class="label-type"></label>
+
+                        <input id="1" type="radio" name="issue" value="Не морозит" required>
+                        <label for="1" class="repair-item">
+                            <p class="repair-head">Не морозит</p>
+                            <p class="repair-desc">Холодильник не понижает температуру</p>
+                        </label>
+
+                        <input id="2" type="radio" name="issue" value="Покрывается льдом" required>
+                        <label for="2" class="repair-item">
+                            <p class="repair-head">Покрывается льдом</p>
+                            <p class="repair-desc">Стенки холодильника покрываются льдом</p>
+                        </label>
+
+                        <input id="3" type="radio" name="issue" value="Работает только морозилка" required>
+                        <label for="3" class="repair-item">
+                            <p class="repair-head">Работает только морозилка</p>
+                            <p class="repair-desc">Охлаждение только в морозильной камере</p>
+                        </label>
+
+                        <input id="4" type="radio" name="issue" value="Перемораживает" required>
+                        <label for="4" class="repair-item">
+                            <p class="repair-head">Перемораживает</p>
+                            <p class="repair-desc">Температура в холодильнике слишком низкая</p>
+                        </label>
+
+                        <input id="5" type="radio" name="issue" value="Не включается" required>
+                        <label for="5" class="repair-item">
+                            <p class="repair-head">Не включается</p>
+                            <p class="repair-desc">Холодильник не реагирует на включение</p>
+                        </label>
+
+                        <input id="6" type="radio" name="issue" value="Не выключается" required>
+                        <label for="6" class="repair-item">
+                            <p class="repair-head">Не выключается</p>
+                            <p class="repair-desc">Холодильник работает без остановки</p>
+                        </label>
+
+                        <input id="7" type="radio" name="issue" value="Не горит лампочка" required>
+                        <label for="7" class="repair-item">
+                            <p class="repair-head">Не горит лампочка</p>
+                            <p class="repair-desc">В холодильнике не работает освещение</p>
+                        </label>
+
+                        <input id="8" type="radio" name="issue" value="Протечка" required>
+                        <label for="8" class="repair-item">
+                            <p class="repair-head">Протечка</p>
+                            <p class="repair-desc">Под холодильником течет вода</p>
+                        </label>
+
+                        <input id="9" type="radio" name="issue" value="Не работает морозилка" required>
+                        <label for="9" class="repair-item">
+                            <p class="repair-head">Не работает морозилка</p>
+                            <p class="repair-desc">Неисправен морозильный отсек</p>
+                        </label>
+
+                        <input id="10" type="radio" name="issue" value="Шумит" required>
+                        <label for="10" class="repair-item">
+                            <p class="repair-head">Шумит</p>
+                            <p class="repair-desc">Во время работы присутствует шум</p>
+                        </label>
+
+                        <input id="11" type="radio" name="issue" value="Включается и сразу отключается" required>
+                        <label for="11" class="repair-item">
+                            <p class="repair-head">Включается и сразу отключается</p>
+                            <p class="repair-desc">Отключается после запуска</p>
+                        </label>
+
+                    </div>
+                    <?php include 'form2.php'; ?>
+                </form>
+                <p class="conf">* Нажимая на кнопку "Перезвоните мне", вы даете согласие на обработку
+                    ваших <a href="https://incomrem.by/politica.html" target="_blank">персональных данных</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section id="price" class="df price-section dn">
+    <div class="price-wrap wrap grid">
+        <div class="price-left">
+            <div class="price-left-texts">
+                <p>Приятные цены</p>
+                <p class="price-text">Выполняем ремонт <?php echo $var3; ?> после согласования окончательной
+                    стоимости.</p>
+                <p class="price-text">Оплату принимаем любым<br />удобным вам способом.</p>
+            </div>
+            <a href="#popup1" class="btn btn-black">
+                <span>Вызвать мастера</span>
+                <svg class="btn-svg1" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"
+                     fill="none">
+                    <path d="M14.3952 7.56808L8.27441 13.689C8.12556 13.8319 7.9266 13.9108 7.72024 13.9087C7.51388 13.9067 7.31655 13.8237 7.17062 13.6778C7.0247 13.5319 6.94179 13.3346 6.9397 13.1282C6.93762 12.9218 7.01651 12.7229 7.15946 12.574L11.9346 7.79818H1.16366C0.956428 7.79532 0.758651 7.71099 0.613115 7.56344C0.46758 7.41588 0.385986 7.21696 0.385986 7.00971C0.385986 6.80245 0.46758 6.60353 0.613115 6.45598C0.758651 6.30842 0.956428 6.22409 1.16366 6.22123H11.9346L7.15961 1.44568C7.08395 1.37302 7.02355 1.286 6.98195 1.18971C6.94034 1.09342 6.91836 0.989794 6.9173 0.884904C6.91624 0.780013 6.93612 0.675965 6.97577 0.578852C7.01542 0.481739 7.07405 0.393513 7.14822 0.31934C7.22239 0.245167 7.31062 0.186539 7.40773 0.146887C7.50484 0.107236 7.60889 0.0873584 7.71378 0.0884192C7.81867 0.08948 7.9223 0.111458 8.01859 0.153065C8.11488 0.194672 8.2019 0.255073 8.27456 0.330731L14.3953 6.45178C14.4324 6.48868 14.4655 6.52933 14.4943 6.57283C14.5065 6.59143 14.5153 6.61228 14.5258 6.63133C14.5405 6.65683 14.5537 6.68308 14.5653 6.71008C14.575 6.73588 14.5831 6.76213 14.5897 6.78898C14.5963 6.81178 14.6055 6.83398 14.6101 6.85753C14.6304 6.95953 14.6304 7.06438 14.6101 7.16623C14.6055 7.18993 14.5963 7.21153 14.5897 7.23448C14.5831 7.26119 14.575 7.28748 14.5653 7.31323C14.5537 7.34023 14.5405 7.36663 14.5258 7.39213C14.5153 7.41148 14.5065 7.43158 14.4943 7.45063C14.4651 7.49278 14.432 7.53206 14.3953 7.56793L14.3952 7.56808Z"
+                          fill="#F9F9F9" />
+                </svg>
+                <svg class="btn-svg2" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"
+                     fill="none">
+                    <path d="M14.3952 7.56808L8.27441 13.689C8.12556 13.8319 7.9266 13.9108 7.72024 13.9087C7.51388 13.9067 7.31655 13.8237 7.17062 13.6778C7.0247 13.5319 6.94179 13.3346 6.9397 13.1282C6.93762 12.9218 7.01651 12.7229 7.15946 12.574L11.9346 7.79818H1.16366C0.956428 7.79532 0.758651 7.71099 0.613115 7.56344C0.46758 7.41588 0.385986 7.21696 0.385986 7.00971C0.385986 6.80245 0.46758 6.60353 0.613115 6.45598C0.758651 6.30842 0.956428 6.22409 1.16366 6.22123H11.9346L7.15961 1.44568C7.08395 1.37302 7.02355 1.286 6.98195 1.18971C6.94034 1.09342 6.91836 0.989794 6.9173 0.884904C6.91624 0.780013 6.93612 0.675965 6.97577 0.578852C7.01542 0.481739 7.07405 0.393513 7.14822 0.31934C7.22239 0.245167 7.31062 0.186539 7.40773 0.146887C7.50484 0.107236 7.60889 0.0873584 7.71378 0.0884192C7.81867 0.08948 7.9223 0.111458 8.01859 0.153065C8.11488 0.194672 8.2019 0.255073 8.27456 0.330731L14.3953 6.45178C14.4324 6.48868 14.4655 6.52933 14.4943 6.57283C14.5065 6.59143 14.5153 6.61228 14.5258 6.63133C14.5405 6.65683 14.5537 6.68308 14.5653 6.71008C14.575 6.73588 14.5831 6.76213 14.5897 6.78898C14.5963 6.81178 14.6055 6.83398 14.6101 6.85753C14.6304 6.95953 14.6304 7.06438 14.6101 7.16623C14.6055 7.18993 14.5963 7.21153 14.5897 7.23448C14.5831 7.26119 14.575 7.28748 14.5653 7.31323C14.5537 7.34023 14.5405 7.36663 14.5258 7.39213C14.5153 7.41148 14.5065 7.43158 14.4943 7.45063C14.4651 7.49278 14.432 7.53206 14.3953 7.56793L14.3952 7.56808Z"
+                          fill="#2C2C2C" />
+                </svg>
+            </a>
+        </div>
+        <div class="price-right">
+            <div id="price-1" class="price-items price-1 active">
+                <div class="price-item price-item-first">
+                    <div class="price-value">20 руб</div>
+                    <div>Вызов мастера и диагностика</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 45 руб</div>
+                    <div>Замена фильтра-осушителя</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 70 руб</div>
+                    <div>Ремонт электронной платы</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 45 руб</div>
+                    <div>Замена терморегулятора</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 80 руб</div>
+                    <div>Ремонт соленоидного клапана</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 80 руб</div>
+                    <div>Замена таймера</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 50 руб</div>
+                    <div>Замена уплотнителя</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-value">от 45 руб</div>
+                    <div>Прочистка дренажной системы</div>
+                </div>
+                <!--  СКРЫТЫЕ   -->
+                <div class="price-item hidden">
+                    <div class="price-value">от 80 руб</div>
+                    <div>Заправка холодильного агрегата</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 110 руб</div>
+                    <div>Замена нагревателя испарителя</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 80 руб</div>
+                    <div>Замена трубопровода теплообменника</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 80 руб</div>
+                    <div>Ремонт электронного блока управления</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 50 руб</div>
+                    <div>Замена электронного блока управления</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 130 руб</div>
+                    <div>Замена компрессора</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 120 руб</div>
+                    <div>Ремонт компрессора</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 50 руб</div>
+                    <div>Ремонт пускозащитного реле</div>
+                </div>
+                <div class="price-item hidden">
+                    <div class="price-value">от 110 руб</div>
+                    <div>Ремонт вентилятора</div>
+                </div>
+
+                <a href="#" class="view-all" data-toggle="show">Показать все</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- СКИДКИ -->
+<?php include 'sale.php'; ?>
+
+<!-- БРЕНДЫ -->
+<section id="brands">
+    <div class="brands-wrap">
+        <h2>Осуществляем ремонт <?php echo $var1; ?> всех марок</h2>
+        <?php include 'brands.php'; ?>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<?php include 'footer.php'; ?>
