@@ -44,7 +44,18 @@
 
     gtag('config', 'AW-16506913961');
 </script>
+
 <body>
+<!-- Clixtell Tracking Code -->
+<script type='text/javascript'>
+    var script=document.createElement('script');
+    var prefix=document.location.protocol;
+    script.async=true;script.type='text/javascript';
+    var target=prefix + '//scripts.clixtell.com/track.js';
+    script.src=target;var elem=document.head;
+    elem.appendChild(script);
+</script>
+
 <div id="preloader">
     <div class="loader"></div>
 </div>
